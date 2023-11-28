@@ -1,0 +1,1 @@
+a:3:{i:0;O:8:"Vehiculo":3:{s:9:"matricula";s:1:"a";s:6:"modelo";s:1:"a";s:3:"kms";s:1:"a";}i:1;O:8:"Vehiculo":3:{s:9:"matricula";s:1:"b";s:6:"modelo";s:1:"b";s:3:"kms";s:1:"c";}i:2;O:8:"Vehiculo":3:{s:9:"matricula";s:1:"w";s:6:"modelo";s:1:"w";s:3:"kms";s:1:"w";}}
