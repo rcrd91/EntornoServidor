@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rexistro</title>
+</head>
+<style>
+    body {
+        background-color:lightgrey;
+    }
+
+    .fieldset {
+		margin-left: auto;
+  		margin-right: auto; 
+		text-align:center;
+		padding-top:auto;
+	}
+
+    fieldset {
+		border-radius: 3px;
+		display: inline-block;
+	}
+</style>
+<body>
+    <div class='fieldset'>
+        <fieldset> 
+            <form action='login.php' method='get'>
+                <input type='input' autofocus placeholder='Nome de Usuario' name='in_usuario'/><br><br>
+                <input type='input' autofocus placeholder='Nome Completo' name='in_nome'/><br><br>
+                <input type='input' autofocus placeholder='Contrasinal' name='in_contrasinal'/><br><br>
+                <input type='input' autofocus placeholder='Email' name='in_email'/><hr>
+                <input type='submit' value='Rexistrar' name='btn_rexistrar'/>
+            </form>
+        </fieldset>
+    </div> 
+</body>
+</html>
