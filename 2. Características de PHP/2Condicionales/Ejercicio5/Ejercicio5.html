@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <form action="Ejercicio5.php" method="get">
+
+        Primeiro número:
+        <input name="num1" type="text" size="5"><br><br>
+        Segundo número:
+        <input name="num2" type="text" size="5"><br><br>
+
+        <!--<select name="operacion" id="operacion">
+            <option input name="suma">Suma</option>
+            <option input name="resta">Resta</option>
+            <option input name="multiplicacion">Multiplicación</option>
+          </select><br><br> -->
+
+        Operación:
+        <select multiple name="operaciones[]">    
+            <option value="+">Suma</option>    
+            <option value="-">Resta</option>    
+            <option value="*">Multiplicación</option> 
+        </select>
+
+        <input type="submit" name="enviar">
+    </form>
+    
+</body>
+</html>
