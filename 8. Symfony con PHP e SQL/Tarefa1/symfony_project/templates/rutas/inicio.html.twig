@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ title }} {% endblock %}
+{% block body %}
+  <p id="centrado"><img id="imgPrincipal" src="{{ asset('imagenes/titulo.png') }}" alt="foto"></p>
+  <p id="link"><a href="{{ asset('/api/rutas') }}" class="button">API</a></p>
+  <p id="link"><a href="{{ asset('/informacion') }}" class="button">Información</a></p>
+  <article id='contenedor'>
+    <table>
+      {% for ruta in rutas %}
+        <fieldset>
+          <div class='ruta'>
+            <img id="imgInicio" src="{{ asset('imagenes/' ~ ruta.imagen) }}" alt="{{ ruta.nombre }}">
+            <p><a href="{{ asset('/rutas/' ~ ruta.slug) }}" class="button"> {{ ruta.nombre }} </a> </p>
+          </div>
+        </fieldset>
+      {% endfor %}
+    </table>
+  </article>
+{% endblock %}
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block body %}
+  <p id="link"><a href="{{ asset('/rutas') }}" class="button">Página principal</a></p>
+  <div class='marco'>
+      <fieldset>
+        <h1>Ruta por {{ ruta.nombre }}</h1>
+        <p><strong>Lugar:</strong> {{ ruta.lugar }}</p>
+        <p><strong>Comunidad autónoma:</strong> {{ ruta.comunidad }}</p>
+        <p><strong>Modalidad:</strong> {{ ruta.modalidad }}</p>
+        <p><strong>Dificultad:</strong> {{ ruta.dificultad }}</p>
+        <img id="imgDetalle" src="{{ asset('imagenes/' ~ ruta.imagen) }}" alt="{{ ruta.nombre }}">
+        <p><strong>Mapa:</strong></p>
+        <iframe src="{{ asset(ruta.mapa ) }}" width="85%" height="440" frameborder="0" scrolling="no"></iframe>
+      </fieldset>
+  </div>  
+{% endblock %}

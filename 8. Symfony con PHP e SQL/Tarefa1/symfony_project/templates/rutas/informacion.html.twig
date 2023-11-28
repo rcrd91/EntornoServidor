@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block body %}
+  <p id="link"><a href="{{ asset('/rutas') }}" class="button">Página principal</a></p>
+  <div class='marco'>
+    <fieldset>
+      <p><strong>Alumno:</strong> {{ alumno }}</p>
+      <p><strong>Ciclo:</strong> {{ ciclo }}</p>
+    </fieldset>
+  </div>
+{% endblock %}

@@ -1,0 +1,7 @@
+<p id="link">
+    <a href="{{ asset('/api/rutas') }}" class="button">API</a>
+    <a href="{{ asset('/informacion') }}" class="button">Información</a>
+    <a href="{{ asset(path('rutas_list', {'orderBy': 'nombre'})) }}" class="button">Ordenado DESC</a>
+    <a href="{{ path('rutas_list', {'dificultad': 'media'}) }}" class="button">Dificultad media</a>
+    <a href="{{ path('rutas_list', {'dificultad': 'media-alta'}) }}" class="button">Dificultad media-alta</a>
+</p>

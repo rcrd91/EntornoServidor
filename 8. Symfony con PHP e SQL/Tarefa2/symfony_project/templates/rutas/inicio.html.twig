@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ title }} {% endblock %}
+{% block body %}
+    <p id="centrado"><img id="imgPrincipal" src="{{ asset('imagenes/titulo.png') }}" alt="foto"></p>
+    {#Plantilla Parcial:#}
+    {{ include('rutas/_plantillaParcial.html.twig') }}
+    <article id='contenedor'>
+        <table>
+            {% for ruta in rutas %}
+                <fieldset>
+                    <div class='ruta'>
+                        <img id="imgInicio" src="{{ asset('imagenes/' ~ ruta.imagen) }}" alt="{{ ruta.nombre }}">
+                        <p><a href="{{ path('ruta_detalle', {'id': ruta.id}) }}" class="button"> {{ ruta.nombre }} </a> </p>
+                    </div>
+                </fieldset>
+            {% endfor %}
+        </table>
+    </article>
+{% endblock %}
