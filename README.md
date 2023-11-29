@@ -1,12 +1,12 @@
 <h1>MP0613 	Desenvolvemento web en entorno servidor</h1>
 <ul>
   <li>Docker</li>
-  <li>Programming Architectures</li>
-  <li>PHP Features</li>
-  <li>Databases with PHP</li>
-  <li>Web Applications with PHP</li>
-  <li>OOP with PHP</li>
-  <li>Web Services</li>
-  <li>Interactive Webs</li>
-  <li>Symfony with PHP and SQL</li>
+  <li>Arquitecturas de Programación</li>
+  <li>Características de PHP</li>
+  <li>Bases de Datos con PHP</li>
+  <li>Aplicaciones Web con PHP</li>
+  <li>Programación Orientada a Objetos con PHP</li>
+  <li>Servicios Web</li>
+  <li>Webs Interactivas</li>
+  <li>Symfony con PHP y SQL</li>
 </ul>
